@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to HTML</title>
+  </head>
+  <body>
+    <h1>Hello Stranger...</h1>
+
+    <h2>Quick Navigation</h2>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">Hobbies and Goals</a></li>
+      <li><a href="#learning">Learning and Certificates</a></li>
+      <li><a href="#links">Useful Links</a></li>
+      <li><a href="#plan">Study Plan</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <hr />
+
+    <h2 id="about">My name is Mohammed Alqadda</h2>
+    <p>
+      I am a Computer Science graduate from Prince Mohammad Bin Fahd University.
+      I am interested in <b>programming</b>, theoretical computer science, and
+      learning how websites are built. This page is part of my HTML practice,
+      and I made it to show what I learned so far.
+    </p>
+
+    <p>
+      Right now I am studying at <i>Tuwaiq Academy</i> in the Web Development
+      in Python Bootcamp. I am trying to improve my front-end basics
+      <b>step by step</b>.
+    </p>
+
+    <hr />
+
+    <h3 id="hobbies">My Hobbies</h3>
+    <ul>
+      <li>Programming</li>
+      <li>Playing video games</li>
+      <li>Chess</li>
+      <li>Exploring new ideas</li>
+    </ul>
+
+    <h3>My learning goals this month</h3>
+    <ol>
+      <li>Write better HTML structure</li>
+      <li>Learn more CSS styling techniques</li>
+      <li>Build simple but complete web pages</li>
+    </ol>
+
+    <hr />
+
+    <h3 id="learning">Currently</h3>
+    <img src="imgs/ramadan-logo.png" alt="Tuwaiq Academy Logo" width="100" />
+    <p>
+      I am currently learning web development and building small projects to
+      practice what I study.
+    </p>
+
+    <h3>My certificate</h3>
+    <p>I finished an HTML Introduction course on the Satr platform.</p>
+    <img
+      src="imgs/Intro_html_certificate.png"
+      alt="HTML Intro Certificate"
+      width="400"
+    />
+    <p>I also finished a CSS Introduction course on the Satr platform.</p>
+    <img
+      src="imgs/intro_css_certificate.png"
+      alt="CSS Intro Certificate"
+      width="400"
+    />
+
+    <hr />
+
+    <h3 id="links">Useful links</h3>
+    <p>
+      Visit
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        target="_blank"
+        rel="noopener noreferrer"
+        >MDN HTML Guide</a
+      >
+      to learn more about HTML.
+    </p>
+    <p>
+      You can also check my
+      <a
+        href="https://github.com/Mohammed-FQ"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub profile</a
+      >.
+    </p>
+
+    <hr />
+
+    <h3 id="plan">My weekly study plan</h3>
+    <table border="1">
+      <caption>
+        Weekly plan for practicing HTML and CSS
+      </caption>
+      <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Hours</th>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>HTML Practice</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>CSS Practice</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Project Building</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2 id="contact">Contact Me</h2>
+    <p>
+      Email:
+      <a href="mailto:MohammedFAlqadda@gmail.com">MohammedFAlqadda@gmail.com</a>
+    </p>
+
+    <h3>Simple Contact Form</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <br />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" />
+      <br />
+      <br />
+
+      <label for="topic">Reason:</label>
+      <select id="topic" name="topic">
+        <option>General message</option>
+        <option>Project feedback</option>
+        <option>Collaboration</option>
+      </select>
+      <br />
+      <br />
+
+      <span>Preferred reply method:</span>
+      <label>
+        <input type="radio" name="replyMethod" value="email" checked /> Email
+      </label>
+      <label>
+        <input type="radio" name="replyMethod" value="phone" /> Phone
+      </label>
+      <br />
+      <br />
+
+      <label>
+        <input type="checkbox" name="newsletter" /> Send me HTML learning resources
+      </label>
+      <br />
+      <br />
+
+      <label for="message">Message:</label>
+      <br />
+      <textarea id="message" name="message" rows="4" cols="40"></textarea>
+      <br />
+      <br />
+
+      <button type="submit">Send</button>
+    </form>
+
+    <hr />
+    <h4>Thanks for visiting this page.</h4>
+  </body>
+</html>

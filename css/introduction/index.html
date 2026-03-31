@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Hello Stranger...</h1>
+      <img src="imgs/Northern_Dreams_Name_Card.jpeg" alt="Northern Dreams name card" />
+    </header>
+
+    <div class="page-layout">
+      <aside class="side-nav">
+        <h2>Quick Navigation</h2>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">Hobbies and Goals</a></li>
+          <li><a href="#learning">Learning and Certificates</a></li>
+          <li><a href="#links">Useful Links</a></li>
+          <li><a href="#plan">Study Plan</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+
+      <main>
+
+      <section class="card" id="about">
+        <h2>My name is Mohammed Alqadda</h2>
+        <p>
+          I am a Computer Science graduate from Prince Mohammad Bin Fahd
+          University. I am interested in <strong>programming</strong>,
+          theoretical computer science, and learning how websites are built.
+          This page is part of my HTML practice, and I made it to show what I
+          learned so far.
+        </p>
+        <p>
+          Right now I am studying at <em>Tuwaiq Academy</em> in the Web
+          Development in Python Bootcamp. I am trying to improve my front-end
+          basics <strong>step by step</strong>.
+        </p>
+      </section>
+
+      <section class="card two-columns" id="hobbies">
+        <div>
+          <h2>My Hobbies</h2>
+          <ul>
+            <li>Programming</li>
+            <li>Playing video games</li>
+            <li>Chess</li>
+            <li>Exploring new ideas</li>
+          </ul>
+
+          <h3>My learning goals this month</h3>
+          <ol>
+            <li>Write better HTML structure</li>
+            <li>Learn more CSS styling techniques</li>
+            <li>Build simple but complete web pages</li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 id="learning">Currently</h2>
+          <p>
+            I am currently learning web development and building small projects
+            to practice what I study.
+          </p>
+          <img src="imgs/ramadan-logo.png" alt="Tuwaiq Academy Logo" />
+        </div>
+      </section>
+
+      <section class="card certificate-section">
+        <h2>My certificate</h2>
+        <p>I finished an HTML Introduction course on the Satr platform.</p>
+        <img
+          src="imgs/Intro_html_certificate.png"
+          alt="HTML Intro Certificate"
+          class="certificate"
+        />
+        <p>I also finished a CSS Introduction course on the Satr platform.</p>
+        <img
+          src="imgs/intro_css_certificate.png"
+          alt="CSS Intro Certificate"
+          class="certificate"
+        />
+      </section>
+
+      <section class="card" id="links">
+        <h2>Useful links</h2>
+        <p>
+          Visit
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN HTML Guide</a
+          >
+          to learn more about HTML.
+        </p>
+        <p>
+          You can also check my
+          <a
+            href="https://github.com/Mohammed-FQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub profile</a
+          >.
+        </p>
+      </section>
+
+      <section class="card" id="plan">
+        <h2>My weekly study plan</h2>
+        <table>
+          <caption>
+            Weekly plan for practicing HTML and CSS
+          </caption>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>HTML Practice</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>CSS Practice</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Project Building</td>
+            <td>3</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Email:
+          <a href="mailto:MohammedFAlqadda@gmail.com"
+            >MohammedFAlqadda@gmail.com</a
+          >
+        </p>
+
+        <h3>Simple Contact Form</h3>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="topic">Reason</label>
+          <select id="topic" name="topic">
+            <option>General message</option>
+            <option>Project feedback</option>
+            <option>Collaboration</option>
+          </select>
+
+          <p class="field-label">Preferred reply method:</p>
+          <label class="inline-option">
+            <input type="radio" name="replyMethod" value="email" checked />
+            Email
+          </label>
+          <label class="inline-option">
+            <input type="radio" name="replyMethod" value="phone" /> Phone
+          </label>
+
+          <label class="inline-option">
+            <input type="checkbox" name="newsletter" /> Send me HTML learning
+            resources
+          </label>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      </main>
+    </div>
+
+    <footer class="page-footer">
+      <p>Thanks for visiting this page.</p>
+    </footer>
+  </body>
+</html>
